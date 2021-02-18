@@ -4,3 +4,12 @@ Create-React-App is a utility that
 3) Lets us use super-modern JS features/idioms
 4) testing and deloyment much easier
 
+installing
+
+need node js installed
+
+WITH NPX
+1) npx create-react-app <app-name>
+
+WITH NPM
+2) create-react-app <app-name>

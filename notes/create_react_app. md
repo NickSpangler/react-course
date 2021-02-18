@@ -1,0 +1,6 @@
+Create-React-App is a utility that
+1) Creates a skeleton react project
+2) sets it up so JS files are run through Babel automatically
+3) Lets us use super-modern JS features/idioms
+4) testing and deloyment much easier
+

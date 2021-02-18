@@ -20,7 +20,7 @@ function getNum() {
 // 				{msg}
 // 			</div>
 // 		);
-// 	}
+// 	} 
 // }
 
 class NumPicker extends React.Component {

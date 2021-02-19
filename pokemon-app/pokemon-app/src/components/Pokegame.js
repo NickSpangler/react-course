@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Pokedex from './Pokedex'
 
 class Pokegame extends Component {
     static defaultProps={
@@ -14,8 +13,13 @@ class Pokegame extends Component {
             {id: 133, name: 'Eevee', type: 'normal', base_experience: 65}
           ]
     }
-    
+
     render() {
+        let hand1 = [], hand2 = [...this.props.pokemon]
+        while (hand1.length < hand2.length) {
+            let randomIndex = Math.floor(Math.random() * hand2.length)
+            hand1.push(hand2.splice(randomIndex, 1)[0])
+        }
         return (
             <div className='Pokegame'>
                 <h1>Pokegame!</h1>

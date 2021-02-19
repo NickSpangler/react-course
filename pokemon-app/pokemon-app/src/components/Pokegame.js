@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Pokedex from './Pokedex'
 
 class Pokegame extends Component {
     static defaultProps={
@@ -20,9 +21,18 @@ class Pokegame extends Component {
             let randomIndex = Math.floor(Math.random() * hand2.length)
             hand1.push(hand2.splice(randomIndex, 1)[0])
         }
+
+        let exp1 = hand1.reduce((totalXP, pokemon) => totalXP + pokemon.base_experience, 0)
+        let exp2 = hand2.reduce((totalXP, pokemon) => totalXP + pokemon.base_experience, 0)
+        
         return (
             <div className='Pokegame'>
                 <h1>Pokegame!</h1>
+                <h2>Player 1:</h2>
+                <Pokedex pokemon={hand1} totalXP={exp1} isWinner={exp1 > exp2}/>
+                <hr></hr>
+                <h2>Player 2:</h2>
+                <Pokedex pokemon={hand2} totalXP={exp2} isWinner={exp1 < exp2}/>
             </div>
         )
     }

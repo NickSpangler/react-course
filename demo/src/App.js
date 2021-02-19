@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import coolPic from './Screen Shot 2021-02-18 at 5.16.38 PM.png'
 import './App.css';
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={george} className="" alt="logo" />
-        <img src={simba} className="App-logo" alt="logo" />
+        <img src={coolPic} />
+        {/* <img src={simba} className="App-logo" alt="logo" /> */}
         <p>
           This has been edited
         </p>
